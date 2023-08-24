@@ -16,15 +16,13 @@ Logistic Regression Model that generated an accuracy score of 95%. Although the 
 
 Looking at the code in step 3 [Split the Data into Training and Testing Sets], using the value_counts function, we can see that the data is highly imbalanced. The majority class is healthy loans [0], and the minority class is non-healthy loans [1]:
 
-# code
-y.value_counts()
 
 # output
 0    75036
 1     2500
 
 
-According to the confusion matrix in step 3 [Create a LRM w/ Original Imbalanced Data]:
+According to the confusion matrix in step 3 [Create an LRM w/ Original Imbalanced Data]:
 
 Out of the 18,765 loan statuses that are healthy (low-risk), the model predicted 18,663 as healthy correctly and 102 as healthy incorrectly.
 
@@ -32,8 +30,6 @@ Out of the 619 non-healthy loan statuses (high-risk), the model predicted 563 as
 
 Classification Report of Imbalanced DataSet
 
-# code
-y_oversampled.value_counts()
 
 # output
 0    56271
